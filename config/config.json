@@ -1,0 +1,39 @@
+{
+  "facesdk": {
+    "dll_path": "/home/firefly/common/face_sdk/lib/libfacerec.so",
+    "conf_dir_path": "/home/firefly/common/face_sdk/conf/facerec",
+    "vworker_config": "video_worker_fdatracker_uld_fda.xml",
+    "method_config": "method10v30_recognizer.xml",
+    "capturer_config": "common_capturer4_lbf_singleface.xml",
+    "online_licence_dir": "/home/firefly/common/face_sdk/license",
+    "database_dir": "/home/firefly/common/face_sdk/base",
+    "license_dir": "/home/firefly/common/face_sdk/license",
+    "use_depth_liveness": false,
+
+    "vw_config_override": {
+      "single_match_mode": 1,
+      "search_k": 10,
+      "consecutive_match_count_for_match_found_callback": 1,
+      "downscale_rawsamples_to_preferred_size": 0,
+      "min_size": 150,
+      "good_blur_threshold": 0.4
+    },
+
+    "nSkipFrames": 1
+  },
+
+  "RGB_camera": {
+    "__device": "/dev/video10",
+    "device": "rtsp://admin:astrohn1@192.168.1.108:554/RVi/1/1",
+
+    "mjpgCapture": false,
+    "mjpg_decoder": "decodebin",
+    "FPS": 30,
+    "showFrames": 1,
+    "pauseModeEnabled": true,
+    "pauseModeHard": false
+  }
+
+
+
+}
